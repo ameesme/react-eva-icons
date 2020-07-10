@@ -10,6 +10,7 @@
   "homepage": "https://dimitrisraptis96.github.io/react-eva-icons",
   "license": "MIT",
   "main": "dist/index.js",
+  "types": "types/index.d.ts",
   "author": {
     "name": "Raptis Dimitrios",
     "email": "dimitrisraptis96@gmail.com"
