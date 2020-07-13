@@ -1,11 +1,11 @@
 declare module 'react-eva-icons' {
 	interface Animation {
 		type: string,
-		hover: boolean,
-		infinite: boolean
+		hover?: boolean,
+		infinite?: boolean
 	}
 	interface EvaIcon {
-		name?: string,
+		name: string,
 		size?: string | number,
 		fill?: string,
 		class?: string,

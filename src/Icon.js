@@ -26,19 +26,19 @@ class Icon extends Component {
   }
 
   render() {
-    const { name, fill, size, animation } = this.props;
+	const { name, fill, size, animation } = this.props;
+	const { type, hover = false, infinite = false } = animation;
     const icon = (
       <i
         data-eva={name}
         data-eva-fill={fill}
         data-eva-height={size}
 		data-eva-width={size}
-		{...(animation.type !== undefined ? {
-			'data-eva-animation': animation.type,
-			'data-eva-hover': animation.hover,
-			'data-eva-infinite': animation.infinite
-		}:
-		{})
+		{...(type !== undefined ? {
+			'data-eva-animation': type,
+			'data-eva-hover': hover,
+			'data-eva-infinite': infinite
+		} : {})
 		}
       />
     );
