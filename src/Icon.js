@@ -27,13 +27,19 @@ class Icon extends Component {
 
   render() {
     const { name, fill, size, animation } = this.props;
-
     const icon = (
       <i
         data-eva={name}
         data-eva-fill={fill}
         data-eva-height={size}
-        data-eva-width={size}
+		data-eva-width={size}
+		{...(animation.type !== undefined ? {
+			'data-eva-animation': animation.type,
+			'data-eva-hover': animation.hover,
+			'data-eva-infinite': animation.infinite
+		}:
+		{})
+		}
       />
     );
 
@@ -52,7 +58,7 @@ Icon.defaultProps = {
   animation: {},
   fill: "#fff",
   name: "",
-  size: "medium",
+  size: "20",
 };
 
 export default Icon;
