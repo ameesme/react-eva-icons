@@ -11,6 +11,6 @@ declare module 'react-eva-icons' {
 		class?: string,
 		animation?: Animation
 	}
-    const Icon: EvaIcon;
+	class Icon extends React.Component<EvaIcon, any> {}
     export default Icon;
 }
