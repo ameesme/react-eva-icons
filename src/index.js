@@ -57,7 +57,10 @@ Icon.propTypes = {
 	animation: PropTypes.object,
 	fill: PropTypes.string,
 	name: PropTypes.string,
-	size: PropTypes.string,
+	size: PropTypes.oneOfType([
+		PropTypes.string,
+		PropTypes.number
+	])
 };
 
 Icon.defaultProps = {

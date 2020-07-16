@@ -5,7 +5,7 @@ declare module 'react-eva-icons' {
 		infinite?: boolean
 	}
 	interface EvaIcon {
-		name: string,
+		name: string | undefined,
 		size?: string | number,
 		fill?: string,
 		class?: string,
